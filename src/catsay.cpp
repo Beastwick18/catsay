@@ -25,26 +25,23 @@ int main(int argc, char** argv) {
 		s = choices[rand() % choices.size()];
 		s += ' ';
 	}
-	string ws = whitespace(s.length());
+	string ws = whitespace(s.length()+2);
 	string un = whitespace(s.length()+1, '-');
-	cout << '/' << un << '\\' << endl;
-	cout << "| " << s  << "|" << endl;
-	cout << "\\" << un << '/' << endl;
-	cout << ws << "\\     _" << endl;
-	cout << ws << " \\    \\`*-." << endl;
-    cout << ws << "  |    )  _`-." << endl;
-    cout << ws << "  \\   .  : `. ." << endl;
-    cout << ws << "   |  : _   '  \\" << endl;
-    cout << ws << "   \\_ ; *` _.   `*-._" << endl;
-    cout << ws << "      `-.-'          `-." << endl;
-    cout << ws << "        ;       `       `." << endl;
-    cout << ws << "        :.       .        \\" << endl;
-    cout << ws << "        . \\  .   :   .-'   ." << endl;
-    cout << ws << "        '  `+.;  ;  '      :" << endl;
-    cout << ws << "        :  '  |    ;       ;-." << endl;
-    cout << ws << "        ; '   : :`-:     _.`* ;" << endl;
-    cout << ws << "     .*' /  .*' ; .*`- +'  `*'" << endl;
-    cout << ws << "     `*-*   `*-*  `*-*'" << endl;
+	cout << ws << "   _" << endl;
+	cout << "/" << un << '\\' << "  \\`*-." << endl;
+    cout << "| " << s  << "|" << "   )  _`-." << endl;
+    cout << "\\" << un << '/' << "   .  : `. ." << endl;
+    cout << ws << "\\  : _   '  \\" << endl;
+    cout << ws << " \\ ; *` _.   `*-._" << endl;
+    cout << ws << "   `-.-'          `-." << endl;
+    cout << ws << "     ;       `       `." << endl;
+    cout << ws << "     :.       .        \\" << endl;
+    cout << ws << "     . \\  .   :   .-'   ." << endl;
+    cout << ws << "     '  `+.;  ;  '      :" << endl;
+    cout << ws << "     :  '  |    ;       ;-." << endl;
+    cout << ws << "     ; '   : :`-:     _.`* ;" << endl;
+    cout << ws << "  .*' /  .*' ; .*`- +'  `*'" << endl;
+    cout << ws << "  `*-*   `*-*  `*-*'" << endl << endl;
 	
 	return 0;
 }
